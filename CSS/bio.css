@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --txt-color:#fff;
+    --bg-color:#ffffff;
+    --btn-bg:#fb8f02;
+    /*alfinal casi ni lo use la paleta de los otros porque quedaba bien fello almenos como estoy de noche me dolia el fondo blanco .. por eso lo cmabie lo combine con mi foto si*/
+}
+body {
+    background-color: #0d1321; 
+    color: #ffffff;          
+}
+
+/*Nav */
+.container{
+    max-width: 85%;
+    height: 100vh;
+    margin: 0 auto
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;        
+    justify-content: space-between;
+}
+.list ul{
+    display: flex;
+    gap: 20px;    
+}
+.list ul li a{
+    color: var(--txt-color);
+    font-weight: 600;    
+}
+.list ul li a,.list ul li{
+    transition: all 0.3s ease-in-out;
+}
+.list ul li a:hover,.list ul li:hover{
+    transform: translateY(-5px);
+}
+
+.Hero{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 60px;    
+    align-items: center; 
+    gap:20px   
+}
+.line{
+    background-color: #a66e3c; /*profe en la otra linea que va en el fondo el contraste la hace ver diferente pero so iguales lo colores*/
+    align-self: center;    
+    width: 40%;
+    margin:0 auto;
+    height: 4px;
+    border-radius: 5px;
+    
+}
+.tag {
+    align-self: flex-start;
+    width: fit-content;
+    background-color: #333D6D;    
+    color: #fbf4d9;
+    /*border:1px solid #bc5500; lo iba a poner con eso pero no me gusta*/ 
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.left{
+    
+    width: fit-content;
+    border-radius: 8px;    
+    background-color: #fbf4d9;
+    padding:10px 20px;
+    
+}
+.box{
+    display: grid;
+    gap:7px;
+    color: #454545;
+}
+.img1{
+    display: block;
+    margin : 0 auto;
+    border-radius: 50%; /* tuve que adivinar porque lo estab poniendo en pixeles ._. XD */
+    box-shadow: 3px 3px 2px gray;    
+    transition: all 0.3s ease-in-out;
+}
+.img1:hover{
+    transform: scale(1.01);
+}
+.info{
+    display:grid;
+    gap:5px;
+}
+.info p{
+    color:#686D76;
+    font-size: 16px;
+    font-weight: 500;    
+}
+.loc{
+    display:block;
+    text-align: end;
+}
+.loc p{
+    display: flex;
+    gap:4px;
+    align-items: center;
+}
+.union{
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.right{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:7px;
+    
+}
+.right p{color:#fff;font-weight: 450;}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+/*Titulos*/
+.tit{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    color: #fff;
+}
+/*son las redes*/
+.github{
+    width: 27px;
+    height: auto;
+    background-color: #ffffff; 
+    display: inline-block;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+.union1{
+    transition: all 0.3s ease-in-out;
+    width: 80%;
+    margin:15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height: auto;   
+    border-radius:18px;
+    
+    padding: 10px 20px;
+    background-color: #222229;
+}
+.union1 a{
+    font-size: 15px;
+    color:#ffffff
+}
+.union1:hover{
+    transform:translateY(-5px)
+    
+}
+.cont{   
+    background-color: rgba(255, 255, 255, 0.4);   
+    border-radius: 8px;   
+    border: 1px solid rgba(255, 255, 255, 0.6);    
+    padding: 25px;
+}
+
+
+
+
